@@ -15,3 +15,5 @@ The Tile provides constructors to create objects of Tile, either based on defaul
 
 
 ## Execution and Testing
+
+![Tile Execution](Snip_Tile_Run.png)
