@@ -15,3 +15,5 @@ The temperature is initially stored in fahrenheit while creating the object. But
 
 
 ## Execution and Testing
+
+![Temperature Execution](Snip_Temperature_Run.png)
