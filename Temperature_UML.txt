@@ -1,7 +1,7 @@
 @startuml
 class Temperature
 {
-	-degrees: double
+	#degrees: double
 	+Temperature(t: double)
 	+getFahrenheit(): double
 	+getCelsius(): double

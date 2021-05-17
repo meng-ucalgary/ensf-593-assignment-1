@@ -10,7 +10,7 @@ public class Temperature {
 	/**
 	 * The temperature to be stored in fahrenheit
 	 */
-	private double degrees;
+	protected double degrees;
 
 	/**
 	 * Constructs an object of class Temperature with fahrenheit temperature
