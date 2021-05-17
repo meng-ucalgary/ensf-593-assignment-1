@@ -1,6 +1,6 @@
 /**
- * Provides data fields and methods to create a data-type representing a
- * Temperature in a Java application.
+ * Class to provide data fields and methods for representing temperature in
+ * Fahrenheit and Celsius
  *
  * @author Bhavyai Gupta
  * @version 1.0
@@ -44,6 +44,12 @@ public class Temperature {
 		return ans;
 	}
 
+	/**
+	 * Checking the working for retrieval of temperature on different scales for
+	 * Temperature class
+	 *
+	 * @param args not used
+	 */
 	public static void main(String[] args) {
 		Temperature thermometer1 = new Temperature(-20.0);
 

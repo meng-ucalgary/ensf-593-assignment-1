@@ -1,6 +1,5 @@
 /**
- * Provides data fields and methods to create a data-type representing a
- * scrabble Tile in a Java application
+ * Class to provide data fields and methods for representing a scrabble Tile
  *
  * @author Bhavyai Gupta
  * @version 1.0
@@ -56,6 +55,11 @@ public class Tile {
 		return false;
 	}
 
+	/**
+	 * Checking toString and equals methods of Tile class
+	 *
+	 * @param args not used
+	 */
 	public static void main(String[] args) {
 		Tile t0 = new Tile();
 		Tile t1 = new Tile();
