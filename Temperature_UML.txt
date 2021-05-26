@@ -1,10 +1,10 @@
 @startuml
 class Temperature
 {
-	#degrees: double
-	+Temperature(t: double)
-	+getFahrenheit(): double
-	+getCelsius(): double
-	+{static} main(args: String[]): void
+    #degrees: double
+    +Temperature(t: double)
+    +getFahrenheit(): double
+    +getCelsius(): double
+    +{static} main(args: String[]): void
 }
 @enduml
