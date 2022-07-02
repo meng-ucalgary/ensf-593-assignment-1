@@ -1,15 +1,19 @@
-# a1-classes-objects
-Practice designing and implemented classes, using objects in Java.
+# ENSF-593 Assignment 1
+
+An assignment on practice designing and implemented classes, using objects in Java.
 
 This assignment has two mandatory parts:
+
 - [1. Temperature](#1-temperature)
 - [2. Tile](#2-tile)
 
 and two optional parts (not graded):
+
 - [Enhanced Temperature](#optional-enhanced-temperature)
 - [Rational](#optional-rational)
 
 # 1. Temperature
+
 **Problem Statement**
 
 Design and implement a class for a Temperature object that is capable of reporting its temperature in either Fahrenheit or Celsius. This class should have one instance variable called `degrees`, which contains the Fahrenheit temperature, and two public methods, one called `getFahrenheit()`, which returns the temperature in Fahrenheit, and one called `getCelsius()`, which returns the temperature in Celsius. This method has to convert the stored temperature to Celsius before returning it. An expression for converting Fahrenheit to Celsius is `(5 *(F -32) /9)`, where `F` is the temperature in Fahrenheit.
@@ -34,21 +38,22 @@ This problem can be divided into one class, the `Temperature` class, which will 
 
 2. Develop a written specification for the Temperature class based on your UML diagram. This will become a comment block at the beginning of your source file.
 
-3. Type the specification you developed in Step 2 into a Java comment block in `src/Temperature.java`. This file will be the file you use for defining the Temperature class. The comment will serve as documentation for the program. A comment block in Java begins with either `/*` or `/**`  and ends with `*/`. It can extend over multiple lines. As explained in Appendix A, comments that begin with `/**` are documentation comments, which can be automatically turned into documentation for the class by using software that comes with the Java Development Kit (JDK). You should use documentation comments to describe a class's specification. Here's an example format that you can use: 
+3. Type the specification you developed in Step 2 into a Java comment block in `src/Temperature.java`. This file will be the file you use for defining the Temperature class. The comment will serve as documentation for the program. A comment block in Java begins with either `/*` or `/**` and ends with `*/`. It can extend over multiple lines. As explained in Appendix A, comments that begin with `/**` are documentation comments, which can be automatically turned into documentation for the class by using software that comes with the Java Development Kit (JDK). You should use documentation comments to describe a class's specification. Here's an example format that you can use:
 
 ```java
-/** 
-* Class Name: Circle 
-* 
-* ... ( the rest of your specification ) 
-* 
+/**
+* Class Name: Circle
+*
+* ... ( the rest of your specification )
+*
 */
 ```
+
 You find more Java documentation examples in JavaDocumentationGuidelines.pdf on D2L.
 
 **Implementation**
 
-Use the stepwise refinement approach to code and test the  Temperature class. Here's a sequence of appropriate steps, after each of which you should compile and run your program. Step 4, step 5 and step 6 are good points to commit to git.
+Use the stepwise refinement approach to code and test the Temperature class. Here's a sequence of appropriate steps, after each of which you should compile and run your program. Step 4, step 5 and step 6 are good points to commit to git.
 
 1. Code the initial comment block (purpose of your program, author name, etc) and the basic class definition.
 
@@ -58,20 +63,21 @@ Use the stepwise refinement approach to code and test the  Temperature class. He
 
 4. Code a stub version of the `main()` method.
 
-5. Add code to the main method to create and use one Temperature object. Write one access method at a time, as well as a method call in `main()` that tests the method. Here is where you would use method calls embedded within `println()` expressions to display the temperature values. For example, here are several statements that will output thermometer1's temperature: 
+5. Add code to the main method to create and use one Temperature object. Write one access method at a time, as well as a method call in `main()` that tests the method. Here is where you would use method calls embedded within `println()` expressions to display the temperature values. For example, here are several statements that will output thermometer1's temperature:
 
 ```java
-System.out.print("The Fahrenheit temperature of  thermometer1 is  "); 
+System.out.print("The Fahrenheit temperature of  thermometer1 is  ");
 System.out.print(thermometer1.getFahrenheit());
-System.out.println(" degrees."); 
+System.out.println(" degrees.");
 ```
 
 6. Add code to the main method to create and use a second Temperature object.
 
 **Reporting**
-In the markdown file `Temperature.md` add the UML class diagram you drew as an embedded image. Include a screenshot demonstrating successful execution and outputs. 
+In the markdown file `Temperature.md` add the UML class diagram you drew as an embedded image. Include a screenshot demonstrating successful execution and outputs.
 
 # 2. Tile
+
 **Problem Statement**
 
 In the board game Scrabble, each tile contains a letter, which is used to spell words in rows and columns, and a score, which is used to determine the value of words.
@@ -104,7 +110,7 @@ This problem can be divided into one class, the `Tile` class, which will impleme
 
 2. Develop a written specification for the Tile class based on your UML diagram. This will become a comment block at the beginning of your source file.
 
-3. Type the specification you developed in Step 2 into a Java comment block in `src/Tile.java`. This file will be the file you use for defining the Tile class. The comment will serve as documentation for the program. 
+3. Type the specification you developed in Step 2 into a Java comment block in `src/Tile.java`. This file will be the file you use for defining the Tile class. The comment will serve as documentation for the program.
 
 **Implementation**
 
@@ -118,19 +124,20 @@ Use the stepwise refinement approach to code and test the Tile class. Here's a s
 
 4. Code a stub version of the `main()` method.
 
-5. Add code to the main method to create and use one Tile object. Write constructors one at a time, as well as a corresponding instantiation in main() that tests the constructor. 
+5. Add code to the main method to create and use one Tile object. Write constructors one at a time, as well as a corresponding instantiation in main() that tests the constructor.
 
 6. Write `toString()` and add code to `main()` to test it.
 
 7. Write `equals()` and add to `main()` to test it.
 
 **Reporting**
-In the markdown file `Tile.md` add the UML class diagram you drew as an embedded image. Include a screenshot demonstrating successful execution and outputs. 
+In the markdown file `Tile.md` add the UML class diagram you drew as an embedded image. Include a screenshot demonstrating successful execution and outputs.
 
 # Optional: Enhanced Temperature
+
 Copy `src/Temperature.java` to `src/EnhancedTemperature.java` and adapt the code to run with the new class name.
 
-Add two mutator methods `setFahrenheit()` and `setCelsius()` to set the Temperature instance variable. Each method has a parameter representing temperature in the corresponding unit, Fahrenheit or Celsius. 
+Add two mutator methods `setFahrenheit()` and `setCelsius()` to set the Temperature instance variable. Each method has a parameter representing temperature in the corresponding unit, Fahrenheit or Celsius.
 
 Add code to main() that asks the user to enter a temperature and prints the conversion. The user should be able to define the units first, then enters the temperature, finally, the program prints the corresponding temperature in the other unit. Use the `Scanner` class introduced in section 2.6 in Java, Java, Java 3E.
 
@@ -138,4 +145,4 @@ As a further extension, the main() could continue asking for conversions until t
 
 # Optional: Rational
 
-Solve Exercise 11.4 in ThinkJava 2e available https://greenteapress.com/wp/think-java-2e/ 
+Solve Exercise 11.4 in ThinkJava 2e available https://greenteapress.com/wp/think-java-2e/
